@@ -7,6 +7,33 @@
 body{
     font-family: sans-serif;
 }
+.container{
+    display:flex;
+    flex-direction: row;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f2796e;
+    width: 55%;
+    min-height: 100vh;
+    padding: 10px 20px;
+}
+.image{
+    background-image: url(./images/illustration.svg);
+    height: 65%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.text{
+    text-align: center;
+    color: white;
+    font-size: 18px;
+
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -39,7 +66,7 @@ label{
     margin-bottom: 15px;
  }
  input:focus{
-    border: 2px solid #f2796e;
+    border: 2px solid #10e542;
  }
  /* Style for icons */
  form div i {
@@ -78,4 +105,22 @@ button{
     box-shadow:  2px 2px 4px rgba(0, 0,0, 0.1);
     border: 2px solid #f2796e;
     transition: all 0.1s ease;    /* do tre */
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+.btn-1,
+.btn-2{
+    padding: 10px 5px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid#c4c4c4;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0,0, 0.1);
 }
